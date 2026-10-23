@@ -1,0 +1,12 @@
+ckan
+limine-snapper-sync
+posy-improved-cursors
+soteria-bin
+swaylock-effects
+ttf-apple-emoji
+unityhub
+waybar-git
+wayfreeze
+xpadneo-dkms-git
+yay-bin
+yay-bin-debug

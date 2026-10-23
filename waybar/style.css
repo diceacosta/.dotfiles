@@ -1,0 +1,157 @@
+@define-color background #0F1B22;
+@define-color background-alt #152B34;
+@define-color foreground #E6F1F4;
+@define-color accent #58AFD8;
+@define-color accent-alt #45A1DF;
+@define-color accent-warm #D8C3A6;
+@define-color urgent #FF6B6B;
+@define-color success #7CA348;
+@define-color border #30404B;
+@define-color warning #EED59A;
+@define-color error #FF6B6B;
+@define-color info #45A1DF;
+@define-color muted #88A6AE;
+@define-color border-hover #58AFD8;
+@define-color border-active #58AFD8;
+
+
+* {
+  background-color: @transparent;
+  color: alpha(@foreground, 1);
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'Ioskeley Mono Term';
+  font-weight: bold;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: alpha(@background, 0.8);
+  
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background-color: transparent;
+  /* border-radius: 5px; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0 5px;
+}
+
+.modules-left {
+  margin-left: 12px;
+}
+
+.modules-right {
+  margin-right: 12px;
+  padding-left: 15px;
+}
+
+.modules-center {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-omarchy,
+
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 5px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  margin-right: 0;
+  font-size: 10px;
+  padding-bottom: 1px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: #a55555;
+}
+
+menu {
+  background-color: #0F1B22;
+  border: 1px solid #152B34;
+  border-radius: 6px;
+  padding: 4px 0;
+}
+
+menuitem {
+  padding: 4px 10px;
+}
+
+menuitem:hover {
+  background-color: #152B34;
+}
